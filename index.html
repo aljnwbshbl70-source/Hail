@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة ثانوية حائل</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-logo">ثانوية حائل</div>
+        <ul class="nav-links">
+            <li><a href="#about" onclick="toggleMenu()"><i class="fas fa-school"></i> الوصف</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()"><i class="fas fa-images"></i> الصور</a></li>
+            <li><a href="#contact" onclick="toggleMenu()"><i class="fas fa-id-card"></i> التواصل</a></li>
+            <li><a href="https://maps.app.goo.gl/AT4GjBw1LwvwTzo8A" target="_blank"><i class="fas fa-map-marker-alt"></i> الموقع</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <div class="badge">صرح تعليمي متميز</div>
+            <h1>ثانوية حائل</h1>
+            <p>نبني العقول.. لنرتقي بالوطن</p>
+            <div class="divider"></div>
+        </header>
+
+        <section id="about" class="section">
+            <div class="content-box">
+                <h3><i class="fas fa-info-circle"></i> عن المدرسة</h3>
+                <p>تعتبر ثانوية حائل من المدارس العريقة في المنطقة، حيث توفر بيئة تعليمية متكاملة بساحات واسعة ومرافق حديثة تدعم إبداع الطلاب.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>7:30 صباحاً</h4>
+                    <p>انطلاق الطابور الصباحي بروح مفعمة بالنشاط والانضباط.</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-running"></i>
+                    <h4>3 حصص</h4>
+                    <p>مخصص أسبوعي للنشاط البدني لكل فصل لتعزيز اللياقة.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h3 class="title">معرض الصور</h3>
+            <div class="gallery">
+                <div class="pic"><img src="pig.1.jpg" alt="صورة 1"></div>
+                <div class="pic"><img src="pig.2.jpg" alt="صورة 2"></div>
+                <div class="pic"><img src="pig.3.jpg" alt="صورة 3"></div>
+                <div class="pic"><img src="pig.4.jpg" alt="صورة 4"></div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <div class="info">
+                <p>إعداد الطالب: <span>وسام غازي</span></p>
+                <p>بإشراف المعلم: <span>تركي العليط</span></p>
+            </div>
+            <div class="actions">
+                <a href="https://wa.me/966570502726" class="btn wa" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="https://maps.app.goo.gl/AT4GjBw1LwvwTzo8A" class="btn map" target="_blank"><i class="fas fa-location-arrow"></i> الموقع</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('mobile-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
